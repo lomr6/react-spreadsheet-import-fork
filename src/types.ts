@@ -3,6 +3,7 @@ import type { DeepReadonly } from "ts-essentials"
 import type { TranslationsRSIProps } from "./translationsRSIProps"
 import type { Columns } from "./steps/MatchColumnsStep/MatchColumnsStep"
 import type { StepState } from "./steps/UploadFlow"
+import { ReactNode } from "react"
 
 export type RsiProps<T extends string> = {
   // Is modal visible.
@@ -49,6 +50,8 @@ export type RsiProps<T extends string> = {
   parseRaw?: boolean
   // Use for right-to-left (RTL) support
   rtl?: boolean
+  // Display an downloadable example file button
+  exampleButton?: ReactNode
 }
 
 export type RawData = Array<string | undefined>

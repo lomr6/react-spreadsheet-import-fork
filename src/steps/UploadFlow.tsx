@@ -57,6 +57,7 @@ export const UploadFlow = ({ state, onNext, onBack }: Props) => {
     fields,
     rowHook,
     tableHook,
+    exampleButton,
   } = useRsi()
   const [uploadedFile, setUploadedFile] = useState<File | null>(null)
   const toast = useToast()
@@ -99,6 +100,7 @@ export const UploadFlow = ({ state, onNext, onBack }: Props) => {
               onNext({ type: StepType.selectSheet, workbook })
             }
           }}
+          downloadExampleButton={exampleButton}
         />
       )
     case StepType.selectSheet:

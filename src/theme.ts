@@ -115,6 +115,14 @@ export const themeOverrides = {
           position: "relative",
           h: "72px",
         },
+        exampleDiv: {
+          display: "flex",
+          justifyContent: "flex-end",
+          marginBottom: "10px",
+        },
+        exampleButton: {
+          width: "15%",
+        },
         dropzoneText: {
           size: "lg",
           lineHeight: 7,
